@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Popins', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: #3c5077;
+    justify-content: center;
+    align-items: center;
+}
+.container button{
+    padding: 10px 60px;
+    background-color: #fff;
+    border: 0;
+    outline: none;
+    font-weight: 500;
+    font-size: 22px;
+    border-radius: 30px;
+
+}
+
+.popsUp{
+    width: 300px;
+    border-radius: 6px;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    transform: translate(-50%, -50%) scale(0.1);
+}
+.open-popup{
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+    top: 50%;
+}
+.popsUp div{
+    padding: 20px;
+    display: grid;
+    place-content: center;
+}
+.popsUp div i{
+    background-color: rgb(47, 197, 47);
+    font-size: 3.3em;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    margin-top: -50px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+.popsUp h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin-top: 50px;
+}
+.popsUp button{
+    width: 100%;
+    margin-top: 50px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    background-color: #6fd649;
+    color: #fff;
+    padding: 10px 0;
+    border: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}

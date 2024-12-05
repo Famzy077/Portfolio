@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" name="formData">
+            <h2> Contact Us</h2>
+            <div class="con1">
+                <div>
+                    <label for="FName *">First Name*</label><br>
+                    <input type="text"  name="FirstName" placeholder="enter your first name">
+                    <p id="errorMsg"></p>
+                </div>
+        
+                <div>
+                    <label for="LName *">Last Name *</label><br>
+                    <input type="text" name="LastName" placeholder="enter your last name">
+                    <p id="errorMsg1"></p>
+                </div>
+            </div>
+    
+            <div class="con2">
+                <label for="Email">Email Address *</label><br>
+                <input type="email" name="email" placeholder="enter your email" text="Email Address *">
+                <p id="errorEmail"></p>
+            </div>
+    
+            <div>
+                <label for="">Query Type *</label><br>
+    
+                <div class="pt1">
+                    <div class="gene">
+                        <div id="type1"> 
+                            <input type="radio" name="General">
+                            <label for="">General Enquiry</label>
+                        </div>
+                        <p id="errorGeneral"></p>
+                    </div>
+        
+                    <div class="supp">
+                        <div id="type2">
+                            <input type="radio" name="support">
+                            <label for="">support Request</label>
+                        </div>
+                        <p id="errorsupport"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="ms1">
+                <label for="MS">Message *</label><br>
+                <input type="text" name="message" placeholder="enter message here">
+                <p id="errorMessage"></p>
+            </div>
+           
+           
+            <div>
+                <input type="checkbox" name="check">
+                <label for="">I constant to being contacted by the team *</label>
+            </div>
+    
+            <div class="btn">
+                <input type="submit" value="Submit">
+            </div>
+            
+        </form>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>
